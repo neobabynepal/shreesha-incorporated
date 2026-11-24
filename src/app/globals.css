@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FCFAF6;
+  --foreground: #1E293B;
+  --corporate-navy: #215172;
+  --sage-green: #3D8568;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F1EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D6EB;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9BBDE0;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(235, 231, 220, 0.7);
+}
+
+.scandi-card {
+  background: #FFFFFF;
+  border: 1px solid #EFECE6;
+  border-radius: 1.25rem;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scandi-card:hover {
+  border-color: #D6CEBC;
+  box-shadow: 0 12px 32px -4px rgba(14, 42, 71, 0.08);
+  transform: translateY(-2px);
+}
