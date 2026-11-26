@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Shreesha Incorporated Pvt. Ltd." }],
   metadataBase: new URL("https://shreeshaincorporated.com"),
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: "/shreesha-favicon.png",
+    shortcut: "/shreesha-favicon.png",
+    apple: "/shreesha-favicon.png",
   },
   openGraph: {
     title: "Shreesha Incorporated | Importer & National Distributor in Nepal",
